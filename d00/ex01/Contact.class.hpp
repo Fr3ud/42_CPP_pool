@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Contact.class.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jaleman <jaleman@student.42.us.org>        +#+  +:+       +#+        */
+/*   By: apavelko <apavelko@student.unit.ua>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/07/04 15:48:07 by jaleman           #+#    #+#             */
-/*   Updated: 2017/07/04 15:48:08 by jaleman          ###   ########.fr       */
+/*   Created: 2018/10/02 17:09:57 by apavelko          #+#    #+#             */
+/*   Updated: 2018/10/02 17:10:43 by apavelko         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

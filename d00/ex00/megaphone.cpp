@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   megaphone.cpp                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: apavelko <apavelko@student.unit.ua>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/10/02 17:05:33 by apavelko          #+#    #+#             */
+/*   Updated: 2018/10/02 17:06:35 by apavelko         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 
-void	print(char *str)
+void	ft_print(char *str)
 {
 	int i = -1;
 	char c;
@@ -25,7 +37,7 @@ int		main(int argc, char **argv)
 		return (0);
 	}
 	while (argv[++i])
-		print(argv[i]);
+		ft_print(argv[i]);
 	std::cout << std::endl;
 
 	return (0);	

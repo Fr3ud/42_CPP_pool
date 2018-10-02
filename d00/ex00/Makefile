@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: apavelko <apavelko@student.unit.ua>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/02 17:04:21 by apavelko          #+#    #+#              #
+#    Updated: 2018/10/02 17:05:27 by apavelko         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME	= megaphone
 SRC		= megaphone.cpp
 FLAGS	= -Wall -Wextra -Werror
@@ -23,4 +35,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean re all test
+.PHONY: clean fclean re all

@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: apavelko <apavelko@student.unit.ua>        +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/02 17:10:50 by apavelko          #+#    #+#              #
+#    Updated: 2018/10/02 17:21:57 by apavelko         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME	= phonebook
 SRC		= Contact.class.cpp addContact.cpp showPhonebook.cpp main.cpp
 FLAGS	= -Wall -Wextra -Werror
