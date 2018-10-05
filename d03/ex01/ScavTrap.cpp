@@ -51,6 +51,7 @@ ScavTrap		& ScavTrap::operator=(ScavTrap const &rhs)
 	this->_name = rhs.getName();
 	this->_meleeAtk = rhs.getMeleeAtk();
 	this->_rangedAtk = rhs.getRangedAtk();
+	this->_armorReduction = rhs.getArmorReduction();
 	this->_specialAtk = rhs.getSpecialAtk();
 
 	return (*this);
