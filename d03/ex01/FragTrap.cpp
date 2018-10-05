@@ -88,7 +88,7 @@ void	FragTrap::takeDamage(unsigned int amount)
 {
 	if (this->_hp < amount - this->_armorReduction) 
 	{
-		std::cout << "FR4G-TP " << this->_name << " takes " << amount - this->_armorReduction << " points of damage !" << std::endl;
+		std::cout << "FR4G-TP " << this->_name << " takes " << this->_hp << " points of damage !" << std::endl;
 		this->_hp = 0;
 	}
 	else 
