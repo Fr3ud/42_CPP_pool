@@ -38,7 +38,7 @@ FragTrap::FragTrap(FragTrap const &src)
 
 FragTrap::~FragTrap(void)
 {
-	std::cout << "I'M DEAD I'M DEAD OHMYGOD I'M DEAD !" << std::endl;
+	std::cout << this->_name << " I'M DEAD I'M DEAD OHMYGOD I'M DEAD !" << std::endl;
 }
 
 FragTrap		& FragTrap::operator=(FragTrap const &rhs)
