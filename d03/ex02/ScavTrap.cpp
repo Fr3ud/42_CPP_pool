@@ -21,7 +21,7 @@ ScavTrap::ScavTrap(std::string name): ClapTrap(name)
 	this->_armorReduction = 3;
 	this->_specialAtk = 42;
 
-	std::cout << this->_name << " created! This time it'll be awesome, I promise !" << std::endl;
+	std::cout << name << " created! This time it'll be awesome, I promise !" << std::endl;
 }
 
 ScavTrap::ScavTrap(ScavTrap const &src)

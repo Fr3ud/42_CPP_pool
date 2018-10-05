@@ -21,7 +21,7 @@ FragTrap::FragTrap(std::string name): ClapTrap(name)
 	this->_armorReduction = 5;
 	this->_specialAtk = 42;
 
-	std::cout << this->_name << " created! This time it'll be awesome, I promise !" << std::endl;
+	std::cout << name << " created! This time it'll be awesome, I promise !" << std::endl;
 }
 
 FragTrap::FragTrap(FragTrap const &src)
