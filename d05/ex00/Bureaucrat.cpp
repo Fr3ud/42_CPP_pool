@@ -25,9 +25,9 @@ Bureaucrat::Bureaucrat(std::string const name, int grade)
     return;
 }
 
-Bureaucrat::Bureaucrat(const Bureaucrat &src)
+Bureaucrat::Bureaucrat(const Bureaucrat &obj)
 {
-    *this = src;
+    *this = obj;
     return;
 }
 
@@ -43,7 +43,7 @@ Bureaucrat &Bureaucrat::operator=(const Bureaucrat &rhs)
         this->_name  = rhs._name;
         this->_grade = rhs._grade;
     }
-    return (*this);
+    return *this;
 }
 
 Bureaucrat::GradeTooLowException::GradeTooLowException(void)
@@ -51,9 +51,9 @@ Bureaucrat::GradeTooLowException::GradeTooLowException(void)
     return;
 }
 
-Bureaucrat::GradeTooLowException::GradeTooLowException(const GradeTooLowException &src)
+Bureaucrat::GradeTooLowException::GradeTooLowException(const GradeTooLowException &obj)
 {
-    *this = src;
+    *this = obj;
     return;
 }
 
@@ -65,12 +65,12 @@ Bureaucrat::GradeTooLowException::~GradeTooLowException(void) throw()
 Bureaucrat::GradeTooLowException &Bureaucrat::GradeTooLowException::operator=(const GradeTooLowException &rhs)
 {
     static_cast <void> (rhs);
-    return (*this);
+    return *this;
 }
 
 const char *Bureaucrat::GradeTooLowException::what() const throw()
 {
-    return ("Error: Grade is too low.");
+    return "Error: Grade is too low.";
 }
 
 Bureaucrat::GradeTooHighException::GradeTooHighException(void)
@@ -78,13 +78,13 @@ Bureaucrat::GradeTooHighException::GradeTooHighException(void)
     return;
 }
 
-Bureaucrat::GradeTooHighException::GradeTooHighException(const GradeTooHighException &src)
+Bureaucrat::GradeTooHighException::GradeTooHighException(const GradeTooHighException &obj)
 {
-    *this = src;
+    *this = obj;
     return;
 }
 
-Bureaucrat::GradeTooHighException::~GradeTooHighException(void)
+Bureaucrat::GradeTooHighException::~GradeTooHighException(void) throw()
 {
     return;
 }
@@ -92,12 +92,12 @@ Bureaucrat::GradeTooHighException::~GradeTooHighException(void)
 Bureaucrat::GradeTooHighException &Bureaucrat::GradeTooHighException::operator=(const GradeTooHighException &rhs)
 {
     static_cast <void> (rhs);
-    return (*this);
+    return *this;
 }
 
 const char *Bureaucrat::GradeTooHighException::what() const throw()
 {
-    return ("Error: Grade is too high.");
+    return "Error: Grade is too high.";
 }
 
 void Bureaucrat::setName(std::string name)
@@ -108,7 +108,7 @@ void Bureaucrat::setName(std::string name)
 
 std::string Bureaucrat::getName(void) const
 {
-    return (this->_name);
+    return this->_name;
 }
 
 void Bureaucrat::setGrade(int grade)
@@ -130,7 +130,7 @@ void Bureaucrat::setGrade(int grade)
 
 int Bureaucrat::getGrade(void) const
 {
-    return (this->_grade);
+    return this->_grade;
 }
 
 void Bureaucrat::incrementGrade(void)
@@ -143,7 +143,7 @@ void Bureaucrat::incrementGrade(void)
     {
         this->_grade -= 1;
     }
-    return ;
+    return;
 }
 
 void Bureaucrat::decrementGrade(void)
@@ -156,11 +156,11 @@ void Bureaucrat::decrementGrade(void)
     {
         this->_grade += 1;
     }
-    return ;
+    return;
 }
 
 std::ostream &operator<<(std::ostream &o, const Bureaucrat &rhs)
 {
     o << rhs.getName() << ", bureaucrat grade " << rhs.getGrade() << std::endl;
-    return (o);
+    return o;
 }
